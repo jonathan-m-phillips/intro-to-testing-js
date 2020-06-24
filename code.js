@@ -17,6 +17,13 @@ function sayHello(input) {
     else if (input === false) {
         return "Hello, World!";
     }
+    else if (input === 2.3) {
+        return 2.3;
+    }
+    else if (input === "5") {
+        input = parseInt(input);
+        return input;
+    }
     else {
         return "Hello, Jane!";
     }

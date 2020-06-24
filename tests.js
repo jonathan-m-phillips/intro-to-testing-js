@@ -36,5 +36,13 @@ describe('sayHello', function() {
     it('should return "Hello, World!" when executed', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
-
+    it('should return null', function(){
+        expect(sayHello()).not.toBe(null);
+    });
+    it('should return a number when called', function(){
+        expect(typeof sayHello(2.3)).toBe('number');
+    });
+    it('should return "5" true when executed', function () {
+        expect(typeof sayHello("5").toBe('number'));
+    });
 });
