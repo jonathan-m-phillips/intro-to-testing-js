@@ -42,7 +42,19 @@ describe('sayHello', function() {
     it('should return a number when called', function(){
         expect(typeof sayHello(2.3)).toBe('number');
     });
-    it('should return "5" true when executed', function () {
-        expect(typeof sayHello("5").toBe('number'));
-    });
 });
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return "true" when passed 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return "true" when passed "5"', function () {
+        expect()
+    })
+})
